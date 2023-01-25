@@ -3,7 +3,7 @@
 WriteLine("Даны уравнения:");
 WriteLine("y = k1 * x + b1");
 WriteLine("y = k2 * x + b2");
-Write("Введите k1, b1, k2, b2 через запятую:");
+Write("Введите k1, b1, k2, b2 через запятую: ");
 string [] variables = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
 
 WriteLine($"y = {variables[0]} * x + {variables[1]}");
