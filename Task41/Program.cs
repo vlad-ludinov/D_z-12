@@ -2,7 +2,7 @@
 
 Write("Введите числа через запятую: ");
 string[] numbers = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
-
+WriteLine($"Положительных чисел введено: {countNumbers(numbers)}");
 
 int countNumbers(string[] arr)
 {
