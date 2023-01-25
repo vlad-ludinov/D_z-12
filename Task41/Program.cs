@@ -7,11 +7,11 @@ WriteLine($"Положительных чисел введено: {countNumbers(
 int countNumbers(string[] arr)
 {
     int count = 0;
-    foreach (var a in arr)
+    foreach (string a in arr)
     {
-        if (int.Parse(a) < 0)
+        if (int.Parse(a) > 0)
         {
-            count =+1;
+            count +=1;
         }
     }
     return count;
