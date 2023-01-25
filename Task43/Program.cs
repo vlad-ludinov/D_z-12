@@ -9,7 +9,7 @@ string [] variables = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntri
 WriteLine($"y = {variables[0]} * x + {variables[1]}");
 WriteLine($"y = {variables[2]} * x + {variables[3]}");
 double [] answer = countXY(variables);
-WriteLine($"(x, y) = ({answer[0]}, {answer[1]})");
+WriteLine($"(x, y) = ({Math.Round(answer[0], 2)}, {Math.Round(answer[1], 2)})");
 
 double [] countXY(string[] varib)
 {
