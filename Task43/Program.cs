@@ -6,7 +6,10 @@ WriteLine("y = k2 * x + b2");
 Write("Введите k1, b1, k2, b2 через запятую:");
 string [] variables = ReadLine()!.Split(",", StringSplitOptions.RemoveEmptyEntries);
 
-
+WriteLine($"y = {variables[0]} * x + {variables[1]}");
+WriteLine($"y = {variables[2]} * x + {variables[3]}");
+double [] answer = countXY(variables);
+WriteLine($"(x, y) = ({answer[0]}, {answer[1]})");
 
 double [] countXY(string[] varib)
 {
